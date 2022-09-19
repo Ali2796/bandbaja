@@ -122,7 +122,9 @@ class _SignInState extends State<SignIn> {
         children: [
              Text(AppText.termofuse,style: TextStyle(color: AppColors.primaryColor,fontWeight: AppTextWeight.boldWeight),),
           SizedBox(width: screenSize.width *0.1,),
-          Text(AppText.privacypolicy,style: TextStyle(color: AppColors.primaryColor,fontWeight: AppTextWeight.boldWeight),),
+          InkWell(onTap: (){
+
+          },child: Text(AppText.privacypolicy,style: TextStyle(color: AppColors.primaryColor,fontWeight: AppTextWeight.boldWeight),)),
 
         ]),
       ),
